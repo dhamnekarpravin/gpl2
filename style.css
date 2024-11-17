@@ -1,0 +1,50 @@
+body {
+    margin:0;
+    /* background-color: black; */
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    video {
+        object-fit: fill; /* This will fill the entire screen, potentially distorting the aspect ratio */
+    }
+}
+
+
+
+audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.log
+{
+   position: relative;
+   border: 2px solid white;
+
+}
+
+marquee{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+
+
+}
+
+@media (max-width: 768px) {
+    marquee {
+      font-size: 25px; /* Adjust font size */
+      scrollamount: 2; /* Adjust scrolling speed */
+    }
+  }
